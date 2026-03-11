@@ -24,7 +24,7 @@ export function Hero() {
         <div className="flex flex-col items-center text-center">
           <div className="relative mb-8 h-44 w-44 overflow-hidden rounded-full border-2 border-gray-100 md:h-52 md:w-52">
             <Image
-              src="/images/profile.jpeg"
+              src="/Personal-Website/images/profile.jpeg"
               alt="Napat Jivakanun"
               fill
               className="object-cover"
