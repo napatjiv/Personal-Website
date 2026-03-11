@@ -1,13 +1,18 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { sections } from "@/lib/constants";
 
 export function Navbar() {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
   const [activeSection, setActiveSection] = useState("hero");
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
+    if (!isHome) return;
     const observers: IntersectionObserver[] = [];
 
     sections.forEach(({ id }) => {
@@ -28,31 +33,44 @@ export function Navbar() {
     });
 
     return () => observers.forEach((o) => o.disconnect());
-  }, []);
+  }, [isHome]);
 
   return (
     <nav className="fixed top-0 z-50 w-full bg-white/80 backdrop-blur-sm border-b border-gray-100">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <a href="#hero" className="text-lg font-semibold tracking-tight">
+        <Link href="/" className="text-lg font-semibold tracking-tight">
           Napat Jivakanun
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <ul className="hidden gap-8 md:flex">
-          {sections.slice(1).map(({ id, label }) => (
-            <li key={id}>
-              <a
-                href={`#${id}`}
-                className={`text-sm transition-colors ${
-                  activeSection === id
-                    ? "text-gray-900 font-medium"
-                    : "text-gray-400 hover:text-gray-700"
-                }`}
-              >
-                {label}
-              </a>
-            </li>
-          ))}
+          {isHome &&
+            sections.slice(1).map(({ id, label }) => (
+              <li key={id}>
+                <a
+                  href={`#${id}`}
+                  className={`text-sm transition-colors ${
+                    activeSection === id
+                      ? "text-gray-900 font-medium"
+                      : "text-gray-400 hover:text-gray-700"
+                  }`}
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
+          <li>
+            <Link
+              href="/projects"
+              className={`text-sm transition-colors ${
+                pathname === "/projects"
+                  ? "text-gray-900 font-medium"
+                  : "text-gray-400 hover:text-gray-700"
+              }`}
+            >
+              Projects
+            </Link>
+          </li>
         </ul>
 
         {/* Mobile hamburger */}
@@ -83,21 +101,35 @@ export function Navbar() {
       {menuOpen && (
         <div className="border-t border-gray-100 bg-white/95 backdrop-blur-sm md:hidden">
           <ul className="flex flex-col px-6 py-4">
-            {sections.slice(1).map(({ id, label }) => (
-              <li key={id}>
-                <a
-                  href={`#${id}`}
-                  onClick={() => setMenuOpen(false)}
-                  className={`block py-3 text-base transition-colors ${
-                    activeSection === id
-                      ? "text-gray-900 font-medium"
-                      : "text-gray-400"
-                  }`}
-                >
-                  {label}
-                </a>
-              </li>
-            ))}
+            {isHome &&
+              sections.slice(1).map(({ id, label }) => (
+                <li key={id}>
+                  <a
+                    href={`#${id}`}
+                    onClick={() => setMenuOpen(false)}
+                    className={`block py-3 text-base transition-colors ${
+                      activeSection === id
+                        ? "text-gray-900 font-medium"
+                        : "text-gray-400"
+                    }`}
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
+            <li>
+              <Link
+                href="/projects"
+                onClick={() => setMenuOpen(false)}
+                className={`block py-3 text-base transition-colors ${
+                  pathname === "/projects"
+                    ? "text-gray-900 font-medium"
+                    : "text-gray-400"
+                }`}
+              >
+                Projects
+              </Link>
+            </li>
           </ul>
         </div>
       )}
