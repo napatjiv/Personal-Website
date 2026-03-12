@@ -7,15 +7,15 @@ const projects = [
   {
     title: "Global Tax Calculator",
     description:
-      "Compare after-tax income across 16 countries with an interactive calculator. Built to help people understand how tax brackets, social security, and deductions affect take-home pay worldwide.",
+      "Whether you're earning passive income abroad, planning for retirement in a new country, or just exploring where your money goes furthest — comparing tax systems across borders is surprisingly hard. This tool makes it simple: pick your countries, enter your income, and instantly see the after-tax breakdown side by side.",
     tech: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/napatjiv/global-tax-calculator",
     live: "https://napatjiv.github.io/global-tax-calculator/",
     highlights: [
       "16 countries with up-to-date tax brackets",
-      "Side-by-side income comparison",
+      "Built for expats, retirees & remote workers",
       "Accounts for social security, deductions & local taxes",
-      "Fully client-side — no server needed",
+      "Fully client-side — no server, no data collected",
     ],
   },
 ];
