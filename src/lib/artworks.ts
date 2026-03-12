@@ -14,7 +14,7 @@ export const artworks: Artwork[] = [
     title: "Club Night",
     year: "2018",
     era: "Maximum Impact",
-    filename: "/Personal-Website/images/artworks/2018/club-night.jpeg",
+    filename: "/images/artworks/2018/club-night.jpeg",
     description: "Vibrant nightlife-themed event poster with photo collage",
   },
   {
@@ -22,7 +22,7 @@ export const artworks: Artwork[] = [
     title: "Cops & Robbers",
     year: "2018",
     era: "Maximum Impact",
-    filename: "/Personal-Website/images/artworks/2018/cops-and-robbers.jpeg",
+    filename: "/images/artworks/2018/cops-and-robbers.jpeg",
     description: "Game night event with high-energy visual treatment",
   },
   {
@@ -30,7 +30,7 @@ export const artworks: Artwork[] = [
     title: "Undoukai",
     year: "2018",
     era: "Maximum Impact",
-    filename: "/Personal-Website/images/artworks/2018/undoukai.jpg",
+    filename: "/images/artworks/2018/undoukai.jpg",
     description: "Japanese sports day event poster",
   },
   // 2019 — "Finding Focus"
@@ -39,7 +39,7 @@ export const artworks: Artwork[] = [
     title: "You & I on Ice",
     year: "2019",
     era: "Finding Focus",
-    filename: "/Personal-Website/images/artworks/2019/you-and-i-on-ice.jpeg",
+    filename: "/images/artworks/2019/you-and-i-on-ice.jpeg",
     description: "Ice skating event with ethereal blue aesthetic",
   },
   {
@@ -47,7 +47,7 @@ export const artworks: Artwork[] = [
     title: "Icebreaker",
     year: "2019",
     era: "Finding Focus",
-    filename: "/Personal-Website/images/artworks/2019/springfest.jpeg",
+    filename: "/images/artworks/2019/springfest.jpeg",
     description: "Welcome icebreaker event poster",
   },
   {
@@ -55,7 +55,7 @@ export const artworks: Artwork[] = [
     title: "Scavenger Hunt",
     year: "2019",
     era: "Finding Focus",
-    filename: "/Personal-Website/images/artworks/2019/scavenger-hunt.jpg",
+    filename: "/images/artworks/2019/scavenger-hunt.jpg",
     description: "Campus-wide scavenger hunt event",
   },
   // 2020-21 — "Less is More"
@@ -64,7 +64,7 @@ export const artworks: Artwork[] = [
     title: "Nihongo de Asobo",
     year: "2020-21",
     era: "Less is More",
-    filename: "/Personal-Website/images/artworks/2020-21/nihongo-de-asobo.jpeg",
+    filename: "/images/artworks/2020-21/nihongo-de-asobo.jpeg",
     description: "Japanese language play event with minimalist Tokyo Skytree silhouette",
   },
   {
@@ -72,7 +72,7 @@ export const artworks: Artwork[] = [
     title: "Icebreaker 2021",
     year: "2020-21",
     era: "Less is More",
-    filename: "/Personal-Website/images/artworks/2020-21/icebreaker-2021.jpeg",
+    filename: "/images/artworks/2020-21/icebreaker-2021.jpeg",
     description: "Welcome event with bold geometric ice pattern",
   },
   {
@@ -80,7 +80,7 @@ export const artworks: Artwork[] = [
     title: "Nightmare Before Christmas",
     year: "2020-21",
     era: "Less is More",
-    filename: "/Personal-Website/images/artworks/2020-21/nbc.jpeg",
+    filename: "/images/artworks/2020-21/nbc.jpeg",
     description: "Jinrou game event with playful Grinch-themed illustration",
   },
 ];

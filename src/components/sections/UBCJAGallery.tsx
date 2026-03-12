@@ -31,7 +31,7 @@ export function UBCJAGallery() {
           <div className="mb-16 grid gap-6 md:grid-cols-2">
             <div className="overflow-hidden rounded-lg">
               <Image
-                src="/Personal-Website/images/ubcja-2017.jpeg"
+                src="/images/ubcja-2017.jpeg"
                 alt="UBCJA Team 2017"
                 width={800}
                 height={500}
@@ -43,7 +43,7 @@ export function UBCJAGallery() {
             </div>
             <div className="overflow-hidden rounded-lg">
               <Image
-                src="/Personal-Website/images/ubcja-2022.jpeg"
+                src="/images/ubcja-2022.jpeg"
                 alt="UBCJA Team 2021"
                 width={800}
                 height={500}
