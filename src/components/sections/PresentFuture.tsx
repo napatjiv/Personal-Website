@@ -16,7 +16,7 @@ const explorations = [
   {
     title: "Tech + Analytics + Innovation",
     description:
-      "Seeking roles at the intersection of technology, data, and venture — where understanding systems and building bridges creates real impact.",
+      "Fascinated by the intersection of technology, data, and venture — where understanding systems and building bridges creates real impact.",
   },
 ];
 
