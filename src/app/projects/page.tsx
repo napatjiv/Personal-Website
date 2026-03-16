@@ -18,6 +18,20 @@ const projects = [
       "Fully client-side — no server, no data collected",
     ],
   },
+  {
+    title: "NEAT BURN — Lifestyle Calorie Optimizer",
+    description:
+      "Stuck at a desk 8+ hours a day and wondering where any calorie burn is supposed to come from? Your smartwatch tracks your runs, but it ignores everything else — cooking, cleaning, even fidgeting. NEAT BURN calculates the calories you burn through everyday activities using research-backed MET values, so you can finally see the full picture of your daily energy expenditure.",
+    tech: ["React", "JavaScript", "Vite", "CSS"],
+    github: "https://github.com/napatjiv/NEAT",
+    live: "https://napatjiv.github.io/NEAT/",
+    highlights: [
+      "25+ daily activities with research-backed MET values",
+      "Environmental adjustments for temperature, surface & carried load",
+      "Real-time calculations as you tweak inputs",
+      "Fully client-side — no server, no data collected",
+    ],
+  },
 ];
 
 export default function ProjectsPage() {
